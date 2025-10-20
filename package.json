@@ -1,27 +1,39 @@
 {
   "$schema": "https://www.raycast.com/schemas/extension.json",
   "name": "empty-downloads-folder",
-  "title": "Empty downloads folder",
-  "description": "Moves the contents of your Downloads folder to the Recycle Bin",
+  "title": "Downloads manager",
+  "description": "Manage your Downloads folder",
   "icon": "extension-icon.png",
   "license": "MIT",
+  "preferences": [
+    {
+      "name": "folderPath",
+      "type": "textfield",
+      "title": "Downloads Folder Path",
+      "description": "Custom path to your Downloads folder (leave empty to auto-detect)",
+      "placeholder": "C:\\Users\\YourUsername\\Downloads",
+      "required": false
+    }
+  ],
   "commands": [
     {
       "name": "empty-downloads-folder",
       "title": "Empty downloads folder",
       "description": "Moves the contents of your downloads folder to the recycle bin",
       "mode": "no-view",
-      "subtitle": "Trash it",
-      "preferences": [
-        {
-          "name": "folderPath",
-          "type": "textfield",
-          "title": "Folder path",
-          "placeholder": "C\\Users\\owen.price\\Downloads",
-          "description": "Folder whose contents will be moved to the Recycle Bin",
-          "required": false
-        }
-      ]
+      "subtitle": "Trash it"
+    },
+    {
+      "name": "copy-latest-download",
+      "title": "Copy latest download",
+      "description": "Copy the most recently downloaded file to clipboard",
+      "mode": "no-view"
+    },
+    {
+      "name": "open-latest-download",
+      "title": "Open latest download",
+      "description": "Open the most recently downloaded file",
+      "mode": "no-view"
     }
   ],
   "dependencies": {

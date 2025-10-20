@@ -9,10 +9,9 @@ export default async function main(): Promise<void> {
   const preferences = getPreferenceValues<{ folderPath?: string }>();
   const userHomeDirectory = os.homedir();
 
-  // Prefer common OneDrive locations first (enterprise / personal), then fall back to the local Downloads folder
+  // Prefer common OneDrive locations first (personal), then fall back to the local Downloads folder
   const candidateDownloadsDirectories = [
     ...(preferences.folderPath ? [preferences.folderPath] : []),
-    path.join(userHomeDirectory, "OneDrive - Modulr Finance", "Downloads"),
     path.join(userHomeDirectory, "OneDrive", "Downloads"),
     path.join(userHomeDirectory, "Downloads"),
   ];
