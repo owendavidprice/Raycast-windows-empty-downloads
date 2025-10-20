@@ -1,7 +1,7 @@
 {
   "$schema": "https://www.raycast.com/schemas/extension.json",
   "name": "empty-downloads-folder",
-  "title": "Downloads manager",
+  "title": "Downloads Manager",
   "description": "Manage your Downloads folder",
   "icon": "extension-icon.png",
   "license": "MIT",
@@ -18,20 +18,20 @@
   "commands": [
     {
       "name": "empty-downloads-folder",
-      "title": "Empty downloads folder",
+      "title": "Empty Downloads Folder",
       "description": "Moves the contents of your downloads folder to the recycle bin",
       "mode": "no-view",
       "subtitle": "Trash it"
     },
     {
       "name": "copy-latest-download",
-      "title": "Copy latest download",
+      "title": "Copy Latest Download",
       "description": "Copy the most recently downloaded file to clipboard",
       "mode": "no-view"
     },
     {
       "name": "open-latest-download",
-      "title": "Open latest download",
+      "title": "Open Latest Download",
       "description": "Open the most recently downloaded file",
       "mode": "no-view"
     }

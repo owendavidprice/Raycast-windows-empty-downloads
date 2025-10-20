@@ -74,4 +74,3 @@ async function resolveExistingDirectory(candidateDirectories: string[]): Promise
   }
   return undefined;
 }
-

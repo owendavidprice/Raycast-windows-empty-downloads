@@ -1,4 +1,4 @@
-import { showHUD, getPreferenceValues, showToast, Toast } from "@raycast/api";
+import { getPreferenceValues, showToast, Toast } from "@raycast/api";
 import os from "node:os";
 import path from "node:path";
 import fs from "node:fs/promises";
